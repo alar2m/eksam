@@ -1,0 +1,48 @@
+# eksam
+eksam040617
+git@github.com:alar2m/eksam.git
+
+<html>
+<input type="text" id="USD" size="10" value="0" onchange="usdfunc()" />
+    <label for="USD"> USD </label>
+
+    </br>
+
+    <input type="text" id="EUR" size="10" value="0" onchange="eurfunc()" />
+    <label for="EUR"> EUR </label>
+
+    
+   <head>
+   <script> 
+    var gbp, usd, eur, cad, aud;
+function init()
+{
+    usd = document.getElementById("USD");
+    eur = document.getElementById("EUR");
+}
+
+
+function eurfunc()
+{
+    usd.value = parseFloat(eur.value) * 0.70641;
+   
+}
+
+function usdfunc()
+{
+  
+    eur.value = parseFloat(usd.value) * 1.41544;
+
+}
+
+init();
+</script>
+</head>
+</html>
+</br>
+</br>
+</br>
+</br>
+
+
+//https://stackoverflow.com/questions/19774387/html-javascript-currency-converter
